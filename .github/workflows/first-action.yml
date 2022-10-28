@@ -15,6 +15,6 @@ jobs:
         # run to define the command that should be executed in command line
         run: echo "Hello World!"
       - name: checking who ami
-        run: sh whoami
+        run: whoami
       - name: Print Wonderful Day
         run: echo "Wonderful Day"

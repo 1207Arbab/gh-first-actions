@@ -16,5 +16,7 @@ jobs:
         run: echo "Hello World!"
       - name: checking who ami
         run: whoami
+      - name: checking node version
+        run: node -v
       - name: Print Wonderful Day
         run: echo "Wonderful Day"

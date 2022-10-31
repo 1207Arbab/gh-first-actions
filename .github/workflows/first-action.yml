@@ -1,16 +1,16 @@
 # name of the workflow. we can have any number of workflows by adding more yaml files
 name: First Workflow
-# decided when this workflow will be executed( event that triggers this workflow to run/execute
+# decided when this workflow will be executed( event that triggers this workflow to run/execute)
 on: workflow_dispatch
-# workflow_dispatch (event which which will be triggered manually 
+# workflow_dispatch (event used to trigger workflow manually) 
 jobs:
   # job-name
   first-job: 
-    # define the runner in which jobs will execute the steps (env in which steps will be executed 
+    # define the runner in which jobs will execute the steps (env in which steps will be executed )
     runs-on: ubuntu-latest
     # steps to be executed
     steps:
-        # steps name to understand properly (documentation)
+        # user defined steps name 
       - name: Print Hello World!
         # run to define the command that should be executed in command line
         run: echo "Hello World!"
